@@ -1,0 +1,192 @@
+*,
+*:after,
+*:before{
+  padding: 0;
+  margin: 0;
+}
+#bars{display: none;}
+
+.hide{
+  height: 0;
+  display: none;
+}
+.show{
+  height: max-content;
+  display: block;
+}
+
+a,li{
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff;
+}
+.mb-20{
+  margin-bottom: 20px;
+}
+.br-50{border-radius: 50%;}
+:root{
+  --bg: #e90f45;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+header{
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./components/img/banner.jpg');
+  background-size: cover;
+  background-position: center;
+}
+nav{
+  width: 100%;
+  background-color: transparent;
+}
+nav .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+nav .container ul li{
+  display: inline-block;
+  padding: 8px 15px;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+nav .container ul{
+  display: flex;
+}
+nav .container h2{
+  font-family: 'Style Script', cursive;
+  font-size: 36px;
+  padding: 5px 0;
+}
+header main{
+  color: #fff;
+  text-align: center;
+  padding-top: 14%;
+}
+header main h3{
+  font-family: 'Brygada 1918', serif;
+  font-size: 35px;
+  font-weight: 400;
+}
+header main h1{
+  font-size: 52px;
+  font-family: sans-serif;
+  padding: 20px 0 30px;
+}
+header main a{
+  font-size: 14px;
+  font-family: sans-serif;
+  padding: 13px 37px;
+  border: 2px solid #fff;
+  background-color: gold;
+  border-radius: 4px;
+}
+.title{
+  width: 100%;
+  text-align: center;
+  padding: 5% 0;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-4{
+  flex-basis: 31%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.col-4 .fas{
+  font-size: 50px;
+  padding: 20px;
+  color: #fff;
+  background-color: #ffd700;
+  border-radius: 50%;
+}
+.service{
+  margin-bottom: 7%;
+}
+/* --------- Portfolio -------- */
+
+.col-4 img{
+  width: 100%;
+}
+
+/*  -------- Team ---------- */
+
+.team .container .row .col-4 img{
+  width: 70%;
+}
+.team .container .row .col-4{
+  font-family: sans-serif;
+}
+.team .container .row .col-4 p{
+  margin: 10px 0;
+}
+.m-icons i{
+  color: #fff;
+  padding: 7px;
+  border-radius: 50%;
+  margin: 0 7px;
+  background-color: #000;
+}
+.facebook{
+  padding: 7px 10px;
+}
+
+
+
+
+
+
+
+/*  ----------- Media ------------ */
+
+@media(max-width:700px){
+  .container{
+    width: 96%;
+    margin: 0 auto;
+  }
+  .row{
+    flex-direction: column;
+  }
+  .col-4{
+    flex-basis: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  nav .container ul{
+    position: absolute;
+    left: 0;
+    top: 65px;
+    background-color: #222;
+    transition: 0.5s;
+    width: 100%;
+  }
+  nav .container ul li{
+    display: block;
+    text-align: center;
+    margin: 25px auto;
+  }
+  #bars{
+    display: block;
+    color: #fff;
+    margin-right: 15px;
+    font-size: 22px;
+  }
+  header main h3 {
+    font-size: 27px;
+  }
+  header main h1{
+    font-size: 45px;
+  }
+}
+
+
